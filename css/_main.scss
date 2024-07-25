@@ -1,0 +1,626 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+   }
+
+body {
+    font-family: $font-family-base,$font-eng;
+    color: $primary-color;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+h2 {
+    color: #650300;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight:bold;
+}
+h5 {
+    font-size: 36px;
+    line-height: 54px;
+}
+
+// 通用 RWD
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .uni-py {
+        padding-block: 40px;
+    }
+
+    .px-sm-3 {
+        padding-inline: 14px;
+    }
+
+    .flex-col-sm {
+        flex-direction: column;
+    }
+
+    .lh-6-sm {
+        line-height: 24px;
+    }
+  }
+
+
+// 模組 -----------------------------------------
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mb-1 {
+    margin-bottom: 4px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.mb-9 {
+    margin-bottom: 36px;
+}
+
+.mb-10 {
+    margin-bottom: 40px;
+}
+
+.mb-12 {
+    margin-bottom: 48px;
+}
+
+.mb-18 {
+    margin-bottom: 72px;
+}
+
+.mr-1 {
+    margin-right: 4px;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.mr-3 {
+    margin-right: 12px;
+}
+
+.mr-4 {
+    margin-right: 16px;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+.mr-6 {
+    margin-right: 24px;
+}
+
+.mr-22px {
+    margin-right: 22px;
+}
+
+.mr-12 {
+    margin-right: 48px;
+}
+
+.ml-3 {
+    margin-left: 12px;
+}
+
+.ml-8 {
+    margin-left: 32px;
+}
+
+.ml-12 {
+    margin-left: 48px;
+}
+
+.ml-16 {
+    margin-left: 64px;
+}
+
+.py-4 {
+    padding-block: 16px;
+}
+
+.uni-py {
+    padding-block: 80px;
+}
+
+
+.text-end {
+    text-align: end;
+}
+.text-center {
+    text-align: center;
+}
+
+.gap-6 {
+    gap: 24px;
+}
+
+.text-white {
+    color:#FFFFFF ;
+}
+// ----------------------------------------------
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.container2 {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+// header  -----------------------------------
+.header {
+    background-color: $primary-color;
+    img {
+        width: 80px;
+        // height: 48.57px;
+    }
+    a {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding-inline: 36px;
+    }
+  }
+@media (max-width: 576px) {
+    .header {
+        padding-inline: 0px;
+        padding-bottom: 0px;
+        margin: 0;
+        img {
+            margin-bottom: 12px;
+            margin-left: 15px
+        }
+    }
+    .container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            padding: 12px 0px;
+            border: 1px solid #FFFFFF;
+            text-align: center;
+            margin-left: 0px;          
+        }
+        a {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+  }
+// banner -----------------
+.banner {
+    background-image: url(../img/home-header.png);
+    padding-block: 296px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $title-color;
+    h1 {
+        font-size: 64px;
+        font-weight:bold;
+        line-height: 96px;
+    }
+    h3 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+.btn {
+    background-color: $primary-color;
+    padding: 6px 12px;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+    &:hover {
+        background-color: #650300;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding-right: 37px;
+    }
+  }
+
+@media (max-width: 430px) {
+    .banner {
+        padding-right: 14px;
+        padding-block: 144px;
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .btn {
+        font-size: 20px;
+        line-height: 30px;
+    }
+  }
+
+//   intro  用專業的心，做專業的事------------------------------------------------
+.intro {
+    background-color: #FBF2F2;
+}
+
+.intro-items {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.intro-item {
+    width: 25%;
+    color: $title-color;
+    padding-left: 12px;
+    padding-right: 12px;
+    img{
+        width: 84px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+    }
+    p {
+        color:#000000 ;
+        text-align: start;
+        }
+}
+
+@media (max-width: 768px) {
+    .intro-items {
+        padding-inline: 24px;
+        flex-wrap: wrap;
+    }
+    .intro-item {
+        width: 48%;
+    }
+  }
+
+@media (max-width: 576px) {
+    .intro-items {
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 2px;
+    }
+    .intro-item {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+  }
+
+// catena 經典系列鏡框---------------------------
+
+.catena-item {
+    width: 33.33333%;
+    p {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 900;
+        color: #AA0601;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 768px) {
+    .catena-items {
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 216px;
+    }
+    .catena-item {
+        width: 100%;
+        margin-bottom: 24px;
+        img {
+            margin-bottom: 8px;
+        }
+    }
+  }
+
+@media (max-width: 576px) {
+    .catena h2 {
+        margin-bottom: 24px;
+    }
+    .catena-items {
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 14px;
+    }
+    .catena-item {
+        margin-bottom: 32px;
+        img {
+            margin-bottom: 8px;
+        }
+    }
+  }
+
+//  joint name 聯名設計鏡框 ---------------------------
+.joint-name {
+    background-image: url(../img/index-bg.png);
+}
+
+.joint-item {
+    p {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 900;
+        color: #AA0601;
+        background-color: #FFFFFF;
+        border-right: 1px solid #ddd;
+        font-style: italic;
+        padding: 8px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .joint-items {
+        flex-direction: column;
+        padding-inline: 36px;
+    }
+    .joint-item {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+  }
+
+@media (max-width: 576px) {
+    .joint-items {
+        flex-direction: column;
+    }
+    .joint-item {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+// <!-- 顧客推薦 Customer recommendations------------------------>
+.reco-item {
+    width: 25%;
+}
+.reco-text {
+    padding: 16px;
+    border: 1px solid #DEE2E6;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 6px #00000029;
+    p {
+        color: #000000;
+        font-weight: 500;
+    }
+    span {
+        color: #707070;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reco-items {
+        flex-wrap: wrap;
+        padding-inline: 36px;
+        // gap:0px;
+    }
+    .reco-item {
+        width: 48%;
+        // margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reco-items {
+        flex-direction: column;
+    }
+    .reco-item {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+// connection 聯絡我們 ---------------------------
+.connection {
+    padding-block: 80px;
+    background-color: #FBF2F2;
+    p {
+        color: #000000;
+    }
+}
+.wrap {
+    max-width: 636px;
+    margin: 0 auto;
+}
+.w-100 {
+    width: 100%;
+}
+label {
+    display: block;
+}
+.field {
+    padding: 6px 12px;
+    background-color: #FBF2F2;
+    border: 1px solid #000000;
+    ::placeholder {
+        opacity: 0.2;
+    }
+}
+textarea {
+    background-color: #FBF2F2;
+    padding: 6px 12px;
+}
+textarea::placeholder {
+    color: #000000;   
+    opacity: 0.2;
+}
+
+.checkbox-container {
+    display: flex;
+}
+
+
+
+.confirm-btn {
+    padding:16px 176px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    border: 0px;
+    cursor: pointer;
+    &:hover {
+        background-color: #650300;
+    }
+}
+
+@media (max-width: 576px) {
+   .confirm-btn {
+    padding:16px 142px;
+   }
+  }
+// footer -----------------------
+.footer {
+    background-color: #AA0601;
+    color: #FFFFFF;
+}
+
+.icon {
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.co-icon {
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 56px 36px;
+        // padding-bottom: 500px;
+    }
+
+    .footer hr {
+        margin-bottom: 16px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    .co-icon {
+        font-size: 40px;
+        line-height: 0px;
+    }
+   }
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 27px 16px;
+    }
+    .footer-nav {
+        display: none;
+    }
+
+    .icon {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer hr {
+        margin-bottom: 16px;
+    }
+
+    .ml-12 {
+        margin-left: 0px;
+    }
+   }
+//  RWD
+
+//   @media (max-width: 768px) {
+//     .header {
+//         padding-inline: 36px;
+//     }
+
+//     .banner {
+//         padding-right: 37px;
+//     }
+//   }
