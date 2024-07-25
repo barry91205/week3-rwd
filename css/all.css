@@ -478,6 +478,7 @@ h5 {
 @media (max-width: 576px) {
   .joint-items {
     flex-direction: column;
+    padding-inline: 14px;
   }
   .joint-item {
     width: 100%;
@@ -516,6 +517,7 @@ h5 {
 @media (max-width: 576px) {
   .reco-items {
     flex-direction: column;
+    padding-inline: 14px;
   }
   .reco-item {
     width: 100%;
